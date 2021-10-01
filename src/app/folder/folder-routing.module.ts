@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { NavBarComponent } from '../components/navbar/navbar.component';
 
 import { FolderPage } from './folder.page';
 
@@ -7,7 +8,7 @@ const routes: Routes = [
   {
     path: '',
     component: FolderPage
-  }
+  },
 ];
 
 @NgModule({
