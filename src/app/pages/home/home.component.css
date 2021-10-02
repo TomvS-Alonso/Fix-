@@ -1,0 +1,46 @@
+ion-button{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+ion-col{
+    font-size: 11px;
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    align-items:center;   
+}
+
+ion-card{
+    margin-top: 30px;
+}
+
+
+.Ver{
+    margin-top: 50px;
+    display:flex;
+    
+}
+
+ion-title{
+    margin-top:40px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+.item-categoria {
+    align-items: center;
+    margin: 50px;
+}
+.categoria-label{
+    text-align: center;
+    font-weight: bolder;
+}
+

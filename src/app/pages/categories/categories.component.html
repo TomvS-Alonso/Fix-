@@ -1,0 +1,54 @@
+<nav-bar title="Categorias"></nav-bar>
+
+<ion-item class="item-categoria" color="warning">
+    <ion-label class="categoria-label"> <ion-icon name="hammer-outline"></ion-icon>Carpinteria</ion-label>
+</ion-item>
+
+<ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
+    (ionScrollEnd)="logScrollEnd()">
+    <ion-card>
+        <ion-item>
+            <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            <ion-label>Ricardo Lopez</ion-label>
+            <ion-button color="warning" fill="outline" slot="end">5/5</ion-button>
+        </ion-item>
+        <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-icon name="person-circle-outline" slot="start">
+            </ion-icon>
+            <ion-label>Fabricio Rojas</ion-label>
+            <ion-button color="warning" fill="outline" slot="end">4/5</ion-button>
+        </ion-item>
+        <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            <ion-label>Hugo Fuentes</ion-label>
+            <ion-button color="warning" fill="outline" slot="end">3/5</ion-button>
+        </ion-item>
+        <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-item>
+            <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            <ion-label>Luis Teran</ion-label>
+            <ion-button color="warning" fill="outline" slot="end">2/5</ion-button>
+        </ion-item>
+        <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+        </ion-card-content>
+    </ion-card>
+</ion-content>

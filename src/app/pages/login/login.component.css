@@ -1,0 +1,18 @@
+.completa {
+    height: 100%;
+}
+ion-card {
+    align-items: center;
+}
+.titulo-app {
+    text-align: center;
+    font-size: large;
+}
+.boton-facebook {
+    font-size: 10px;
+    
+}
+.boton-google {
+    font-size: 10px;
+    
+}

@@ -1,0 +1,107 @@
+<ion-item>
+    <ion-label class="titulo-app">
+        Fix +
+    </ion-label>
+</ion-item>
+<ion-content [fullscreen]="true">
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title class="ion-text-center">
+                            Registro
+                        </ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Correo</ion-label>
+                                        <ion-input 
+                                            type="text" 
+                                        ></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Nombre</ion-label>
+                                        <ion-input 
+                                            type="text"
+                                        ></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Apellidos</ion-label>
+                                        <ion-input 
+                                            type="text"
+                                        ></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row> 
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Telefono</ion-label>
+                                        <ion-input 
+                                            type="text"
+                                        ></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Fecha de nacimiento
+                                        </ion-label>
+                                        <ion-datetime
+                                            displayFormat="DD/MM/YYYY"
+                                            >
+                                        </ion-datetime>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">Contraseña</ion-label>
+                                        <ion-input 
+                                            type="password"
+                                        ></ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>          
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button 
+                                        expand="block" 
+                                        href=""
+                                        color="warning"
+                                    >
+                                        Registarse</ion-button>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button 
+                                        expand="block" 
+                                        href="login"
+                                        color="danger"
+                                    >
+                                        Cancelar</ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

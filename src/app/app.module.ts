@@ -11,6 +11,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContainerComponent } from './components/container/container.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     ContainerComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    CategoriesComponent,
     ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
