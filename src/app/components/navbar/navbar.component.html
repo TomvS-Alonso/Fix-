@@ -1,8 +1,17 @@
 <ion-header [translucent]="true">
-    <ion-toolbar>
+  <ion-toolbar>
+    <div class="contenido-navbar">
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
       <ion-title>{{ title }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <ion-button color="light" href="buscar">
+        <ion-icon name="search">
+        </ion-icon>
+      </ion-button>
+      <ion-button color="light">
+        <ion-icon name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>

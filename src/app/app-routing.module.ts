@@ -6,11 +6,17 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { RecuperarComponent } from './pages/recuperar/recuperar.component';
+import { PerfilTComponent } from './pages/perfil-trabajador/perfilT.component'
+import { BuscarComponent } from './pages/buscar/buscar.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'buscar',
+    component: BuscarComponent
   },
   {
     path: 'about',
@@ -31,6 +37,10 @@ const routes: Routes = [
   {
     path: 'categories',
     component: CategoriesComponent
+  },
+  {
+    path: 'perfilT',
+    component: PerfilTComponent
   },
   {
     path: '',
