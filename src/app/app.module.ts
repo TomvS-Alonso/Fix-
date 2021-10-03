@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { RecuperarComponent } from './pages/recuperar/recuperar.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     LoginComponent,
     RegisterComponent,
     CategoriesComponent,
+    RecuperarComponent
     ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
