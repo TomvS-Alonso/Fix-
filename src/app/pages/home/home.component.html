@@ -6,7 +6,7 @@
     <ion-grid>
         <ion-row>
             <ion-col>
-                <ion-button color="warning" href="categories">
+                <ion-button  color="warning" href="categories">
                     <ion-icon name="hammer-outline"></ion-icon>
                     Carpintero
                 </ion-button>
@@ -44,7 +44,13 @@
         </ion-row>
     </ion-grid>
 
-    <ion-button color="warning" class="Ver"> Ver mas </ion-button>
+     <ion-grid>
+        <ion-row>
+        <ion-col>
+    <ion-button color="warning"  href="ver-mas" class="ver-mas"> Ver mas </ion-button>
+        </ion-col> 
+        </ion-row>
+    </ion-grid>
 
     <ion-title class="maestros"> Maestros Populares</ion-title>
 
@@ -71,5 +77,18 @@
             within an ion-card-content element.
         </ion-card-content>
     </ion-card>    
+
+    <ion-card>
+        <ion-item>
+            <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+            <ion-label>Ricardo Nestle</ion-label>
+            <ion-button color="warning" fill="outline" slot="end">5/5</ion-button>
+        </ion-item>
+        <ion-card-content>
+            This is content, without any paragraph or header tags,
+            within an ion-card-content element.
+        </ion-card-content>
+    </ion-card>    
+
 
 </ion-content>

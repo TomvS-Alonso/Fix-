@@ -3,8 +3,16 @@
     <ion-menu side="start" menuId="custom" contentId="main-content" type="push">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header></ion-list-header>
-          <ion-note></ion-note>
+          <ion-grid class="imagen">
+            <ion-row>
+              <ion-col>
+                <img src="../assets/icon/logo.png">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          
+          <!-- <ion-list-header></ion-list-header>
+          <ion-note></ion-note> -->
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
@@ -14,6 +22,7 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
+
         <ion-list id="labels-list">
           <ion-list-header>Fix+ 2021.</ion-list-header>
           <ion-item *ngFor="let label of labels" lines="none">
