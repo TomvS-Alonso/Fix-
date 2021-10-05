@@ -8,10 +8,11 @@ import { MenuController } from '@ionic/angular';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Principal', url: '/', icon: 'mail' },
-    { title: 'Chat', url: '/', icon: 'chatbox' },
+    { title: 'Principal', url: '/', icon: 'home' },
+    { title: 'Perfil', url: '/usuario', icon: 'person' },
+    { title: 'Chat', url: '/chat', icon: 'chatbox' },
     { title: 'Acerca de', url: '/about', icon: 'paper-plane' },
-    { title: 'Favoritos', url: '/', icon: 'heart' },
+    { title: 'Favoritos', url: '/fav', icon: 'heart' },
     { title: 'Cerrar sesion', url: '/login', icon: 'log-out' },
   ];
   

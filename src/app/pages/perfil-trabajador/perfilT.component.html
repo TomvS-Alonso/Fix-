@@ -1,11 +1,97 @@
 <nav-bar title="Perfil Trabajador"></nav-bar>
 
-<ion-content fullscreen={true}>
-    <ion-list-header class="nombreT">
-        <ion-label>
-            Esteban Dió
-        </ion-label>
-    </ion-list-header>
-    <ion-avatar class="ion-margin-start">
-        <img src="https://www.lacuarta.com/wp-content/uploads/2021/09/Marcianeke.jpg">
-    </ion-avatar>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-list-header class="nombreT">
+                    <ion-label>
+                        Ricardo Lopez
+                    </ion-label>
+                </ion-list-header>
+                <ion-avatar class="ion-margin-start">
+                    <img
+                        src="https://larepublica.pe/resizer/INezQGkqOjqIDU4-1kdnX3yQYIk=/1250x735/top/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/2M5BMK34JBGZHIIVHLPIGXWVJE.png">
+                </ion-avatar>
+            </ion-col>
+            <ion-col>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                        </ion-col>
+                        <ion-col>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                        </ion-col>
+                        <ion-col>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col class="puntuacion">
+                            <ion-icon name="star-half-outline"></ion-icon>
+                            4.3
+                        </ion-col>
+                        <ion-col class="puntuacionUbica">
+                            <ion-icon name="location-outline"></ion-icon>
+                            Los Santos
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col class="puntuacion2">
+                            4.350 Calificaciones
+                        </ion-col>
+                        <ion-col class="puntuacion2">
+                            Hace 3 años en Fix+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <img src="https://www.casaschilespa.cl/img/cms/Maule-home_1.jpg">
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                Descripción
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis praesentium unde nihil exercitationem
+                atque ad ducimus facere nostrum, consequuntur sit animi corrupti quaerat
+                voluptates veniam cumque ipsum placeat. Distinctio, sapiente.
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-tab>
+        <ion-tabs [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
+            (ionScrollEnd)="logScrollEnd()">
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="schedule">
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                    <ion-label>Chat</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="speakers">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <ion-label>Contacto</ion-label>
+                </ion-tab-button>
+                <ion-tab-button tab="about">
+                    <ion-icon name="information-circle"></ion-icon>
+                    <ion-label>Notificar Problema</ion-label>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-tabs>
+    </ion-tab>
+</ion-content>

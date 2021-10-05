@@ -5,9 +5,9 @@
         <ion-list id="inbox-list">
           <ion-grid class="imagen">
             <ion-row>
-              <ion-col>
-                <img src="../assets/icon/logo.png">
-              </ion-col>
+              <ion-avatar>
+                <img src="../assets/icon/logo_transparent_1.png">
+              </ion-avatar>
             </ion-row>
           </ion-grid>
           
@@ -16,7 +16,7 @@
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
-              routerLinkActive="selected">
+              routerLinkActive="selected" class="lista">
               <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>

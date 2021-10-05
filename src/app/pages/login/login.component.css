@@ -7,6 +7,7 @@ ion-card {
 .titulo-app {
     text-align: center;
     font-size: large;
+    color: white;
 }
 .boton-facebook {
     font-size: 10px;
@@ -16,6 +17,6 @@ ion-card {
     font-size: 10px;
     
 }
-.tituto-app {
-    background-color:#0c449c;
+.a {
+    background-color: #1659c4;
 }

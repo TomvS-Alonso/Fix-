@@ -4,3 +4,13 @@
 .imagen {
     width: 150px;
 }
+ion-avatar {
+    display: contents;
+}
+#inbox-list {
+    background-color: #0c449c;
+}
+.lista {
+    /* border-radius: 25px; */
+    /* border: solid 2px black; */
+}

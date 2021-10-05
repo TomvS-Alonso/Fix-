@@ -17,6 +17,8 @@ import { RecuperarComponent } from './pages/recuperar/recuperar.component';
 import { PerfilTComponent } from './pages/perfil-trabajador/perfilT.component'
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { VermasComponent } from './pages/ver-mas/ver-mas.component';
+import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -31,10 +33,11 @@ import { VermasComponent } from './pages/ver-mas/ver-mas.component';
     RecuperarComponent,
     PerfilTComponent,
     BuscarComponent,
-    VermasComponent
+    VermasComponent,
+    PerfilUsuarioComponent,
     ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [SwiperModule,BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

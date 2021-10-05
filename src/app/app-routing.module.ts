@@ -9,6 +9,7 @@ import { RecuperarComponent } from './pages/recuperar/recuperar.component';
 import { PerfilTComponent } from './pages/perfil-trabajador/perfilT.component'
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { VermasComponent } from './pages/ver-mas/ver-mas.component';
+import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'buscar',
     component: BuscarComponent
+  },
+  {
+    path: 'usuario',
+    component: PerfilUsuarioComponent
   },
   {
     path: 'about',
