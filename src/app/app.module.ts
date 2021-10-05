@@ -19,6 +19,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { VermasComponent } from './pages/ver-mas/ver-mas.component';
 import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
 import { SwiperModule } from 'swiper/angular';
+import { FavoritoComponent } from './pages/favoritos/favorito.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SwiperModule } from 'swiper/angular';
     BuscarComponent,
     VermasComponent,
     PerfilUsuarioComponent,
+    FavoritoComponent,
     ],
   entryComponents: [],
   imports: [SwiperModule,BrowserModule, IonicModule.forRoot(), AppRoutingModule],

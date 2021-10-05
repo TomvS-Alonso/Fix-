@@ -12,7 +12,7 @@ export class AppComponent {
     { title: 'Perfil', url: '/usuario', icon: 'person' },
     { title: 'Chat', url: '/chat', icon: 'chatbox' },
     { title: 'Acerca de', url: '/about', icon: 'paper-plane' },
-    { title: 'Favoritos', url: '/fav', icon: 'heart' },
+    { title: 'Favoritos', url: '/favoritos', icon: 'heart' },
     { title: 'Cerrar sesion', url: '/login', icon: 'log-out' },
   ];
   

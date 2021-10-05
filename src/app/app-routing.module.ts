@@ -10,6 +10,7 @@ import { PerfilTComponent } from './pages/perfil-trabajador/perfilT.component'
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { VermasComponent } from './pages/ver-mas/ver-mas.component';
 import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
+import { FavoritoComponent } from './pages/favoritos/favorito.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'perfilT',
     component: PerfilTComponent
+  },
+  {
+    path: "favoritos",
+    component: FavoritoComponent
   },
   {
     path: '',
