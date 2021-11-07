@@ -16,6 +16,10 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { RecuperarComponent } from './pages/recuperar/recuperar.component';
 import { PerfilTComponent } from './pages/perfil-trabajador/perfilT.component'
 import { BuscarComponent } from './pages/buscar/buscar.component';
+import { VermasComponent } from './pages/ver-mas/ver-mas.component';
+import { MaestrosServicioService } from './servicio/maestros-servicio.service';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,11 +33,12 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
     CategoriesComponent,
     RecuperarComponent,
     PerfilTComponent,
-    BuscarComponent
+    BuscarComponent,
+    VermasComponent
     ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FormsModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy, }, MaestrosServicioService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

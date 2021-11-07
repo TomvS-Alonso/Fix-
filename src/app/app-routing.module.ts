@@ -8,6 +8,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
 import { RecuperarComponent } from './pages/recuperar/recuperar.component';
 import { PerfilTComponent } from './pages/perfil-trabajador/perfilT.component'
 import { BuscarComponent } from './pages/buscar/buscar.component';
+import { VermasComponent } from './pages/ver-mas/ver-mas.component';
 
 const routes: Routes = [
   {
@@ -43,10 +44,10 @@ const routes: Routes = [
     component: PerfilTComponent
   },
   {
-    path: '',
-    redirectTo: 'folder/Inbox',
-    pathMatch: 'full'
+    path: 'ver-mas',
+    component: VermasComponent
   },
+
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
