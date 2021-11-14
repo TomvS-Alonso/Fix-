@@ -6,7 +6,7 @@
             <ion-col>
                 <ion-list-header class="nombreT">
                     <ion-label>
-                        Tomas Avendaño
+                        {{ nombre }} {{ apellidos }}
                     </ion-label>
                 </ion-list-header>
                 <ion-avatar class="ion-margin-start">
@@ -31,7 +31,7 @@
                     <ion-row>
                         <ion-col class="puntuacionUbica">
                             <ion-icon name="location-outline"></ion-icon>
-                            Region metropolitana
+                            {{ direccion }}
                         </ion-col>
                     </ion-row>
                     <ion-row>
@@ -64,9 +64,15 @@
                     </ion-card>
                 </ion-card-content>
               </ion-card>
-
-              
-            
+        </ion-row>
+    </ion-grid>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-button expand="full" (click)="eliminarUsuario()" href="/">
+                    Eliminar Cuenta
+                </ion-button>
+            </ion-col>
         </ion-row>
     </ion-grid>
 </ion-content>

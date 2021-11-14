@@ -1,4 +1,8 @@
-import { Component } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { Component, OnInit } from "@angular/core";
+import { Observable } from "rxjs";
+import { IMaestro } from "src/app/servicio/IMaestro";
+import { MaestroServicioService } from "src/app/servicio/maestro-servicio.service";
 
 @Component({
     selector: 'categories',
@@ -6,6 +10,21 @@ import { Component } from "@angular/core";
     styleUrls: ['./categories.component.css']
 })
 
-export class CategoriesComponent {
-    
+export class CategoriesComponent implements OnInit{
+    private url: string = 'http://localhost:3000/maestros';
+    private httpClient: HttpClient;
+
+    // nombre: string;
+    // apellido: string;
+    maestros: Observable<Array<IMaestro>>;    
+
+    constructor(private servicio: MaestroServicioService, private cliente: HttpClient) {}
+
+    ngOnInit() {
+        // this.maestros = this.servicio.obtenerMaestros();
+        this.cliente.get<any>(this.url).subscribe((response) => {            
+            this.maestros = response;
+            
+        })
+    }
 }

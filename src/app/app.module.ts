@@ -20,6 +20,11 @@ import { VermasComponent } from './pages/ver-mas/ver-mas.component';
 import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
 import { SwiperModule } from 'swiper/angular';
 import { FavoritoComponent } from './pages/favoritos/favorito.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UsuarioServicioService } from './servicio/usuario-servicio.service';
+import { RegistroMaestroComponent } from './pages/registerMaestro/registerM.component';
+import { MaestroServicioService } from './servicio/maestro-servicio.service';
 
 @NgModule({
   declarations: [
@@ -30,6 +35,7 @@ import { FavoritoComponent } from './pages/favoritos/favorito.component';
     AboutComponent,
     LoginComponent,
     RegisterComponent,
+    RegistroMaestroComponent,
     CategoriesComponent,
     RecuperarComponent,
     PerfilTComponent,
@@ -39,8 +45,17 @@ import { FavoritoComponent } from './pages/favoritos/favorito.component';
     FavoritoComponent,
     ],
   entryComponents: [],
-  imports: [SwiperModule,BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [
+    SwiperModule,
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule, 
+    FormsModule, 
+    HttpClientModule],
+  providers: [
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, 
+    UsuarioServicioService, 
+    MaestroServicioService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

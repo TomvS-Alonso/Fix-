@@ -1,12 +1,13 @@
 <nav-bar title="Perfil Trabajador"></nav-bar>
 
 <ion-content>
-    <ion-grid>
+    
+    <ion-grid >
         <ion-row>
             <ion-col>
                 <ion-list-header class="nombreT">
                     <ion-label>
-                        Ricardo Lopez
+                        {{ nombre }} {{ apellidos }}
                     </ion-label>
                 </ion-list-header>
                 <ion-avatar class="ion-margin-start">
@@ -35,7 +36,7 @@
                         </ion-col>
                         <ion-col class="puntuacionUbica">
                             <ion-icon name="location-outline"></ion-icon>
-                            Los Santos
+                            {{ direccion }}
                         </ion-col>
                     </ion-row>
                     <ion-row>
@@ -75,7 +76,17 @@
         </ion-row>
     </ion-grid>
 
-    <ion-tab>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-button expand="full" (click)="eliminarUsuario()" href="/">
+                    Eliminar Cuenta
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <!-- <ion-tab>
         <ion-tabs [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
             (ionScrollEnd)="logScrollEnd()">
             <ion-tab-bar slot="bottom">
@@ -93,5 +104,5 @@
                 </ion-tab-button>
             </ion-tab-bar>
         </ion-tabs>
-    </ion-tab>
+    </ion-tab> -->
 </ion-content>

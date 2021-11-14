@@ -19,7 +19,7 @@
                 <ion-card>
                     <ion-card-header>
                         <ion-card-title class="ion-text-center">
-                            Registro
+                            Registro de Maestros
                         </ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
@@ -31,7 +31,7 @@
                                         <ion-input 
                                             type="text"
                                             required
-                                            [(ngModel)]="usuario.correo"
+                                            [(ngModel)]="maestro.correo"
                                         ></ion-input>
                                     </ion-item>
                                 </ion-col>
@@ -43,7 +43,7 @@
                                         <ion-input 
                                             type="text"
                                             required
-                                            [(ngModel)]="usuario.nombre"
+                                            [(ngModel)]="maestro.nombre"
                                         ></ion-input>
                                     </ion-item>
                                 </ion-col>
@@ -55,7 +55,7 @@
                                         <ion-input
                                             required 
                                             type="text"
-                                            [(ngModel)]="usuario.apellidos"
+                                            [(ngModel)]="maestro.apellidos"
                                         ></ion-input>
                                     </ion-item>
                                 </ion-col>
@@ -67,19 +67,7 @@
                                         <ion-input 
                                             required
                                             type="text"
-                                            [(ngModel)]="usuario.telefono"
-                                        ></ion-input>
-                                    </ion-item>
-                                </ion-col>
-                            </ion-row>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-item>
-                                        <ion-label position="floating">Direccion</ion-label>
-                                        <ion-input 
-                                            required
-                                            type="text"
-                                            [(ngModel)]="usuario.direccion"
+                                            [(ngModel)]="maestro.telefono"
                                         ></ion-input>
                                     </ion-item>
                                 </ion-col>
@@ -88,14 +76,27 @@
                                 <ion-col>
                                     <ion-item>
                                         <ion-label position="floating">
-                                            Fecha de nacimiento
+                                            Profesion
                                         </ion-label>
-                                        <ion-datetime
-                                        required
-                                        [(ngModel)]="usuario.fechaNacimiento"
-                                            displayFormat="DD/MM/YYYY"
-                                            >
-                                        </ion-datetime>
+                                        <ion-input
+                                            required
+                                            [(ngModel)]="maestro.profesion"
+                                        >
+                                        </ion-input>
+                                    </ion-item>
+                                </ion-col>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-item>
+                                        <ion-label position="floating">
+                                            Direccion
+                                        </ion-label>
+                                        <ion-input
+                                            required
+                                            [(ngModel)]="maestro.direccion"
+                                        >
+                                        </ion-input>
                                     </ion-item>
                                 </ion-col>
                             </ion-row>
@@ -106,7 +107,7 @@
                                         <ion-input
                                             required 
                                             type="password"
-                                            [(ngModel)]="usuario.contrasena"
+                                            [(ngModel)]="maestro.contrasena"
                                         ></ion-input>
                                     </ion-item>
                                 </ion-col>
@@ -115,9 +116,9 @@
                                 <ion-col>
                                     <ion-button 
                                         expand="block" 
-                                        (click)="agregarUsuario()"
+                                        (click)="agregarMaestro()"
                                         color="warning"
-                                        href="login"
+                                        
                                     >
                                         Registarse</ion-button>
                                 </ion-col>

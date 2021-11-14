@@ -7,17 +7,19 @@
 <ion-content [scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)"
     (ionScrollEnd)="logScrollEnd()">
     <ion-card href="perfilT">
-        <ion-item>
+
+        <ion-item *ngFor="let maestro of maestros">
+
             <ion-icon name="person-circle-outline" slot="start"></ion-icon>
-            <ion-label>Ricardo Lopez</ion-label>
+            <ion-label>{{ maestro.nombre }} {{ maestro.apellidos }}</ion-label>
             <ion-button color="warning" fill="outline" slot="end">5/5</ion-button>
         </ion-item>
-        <ion-card-content>
+        <!-- <ion-card-content>
             This is content, without any paragraph or header tags,
             within an ion-card-content element.
-        </ion-card-content>
+        </ion-card-content> -->
     </ion-card>
-    <ion-card>
+    <!-- <ion-card>
         <ion-item>
             <ion-icon name="person-circle-outline" slot="start">
             </ion-icon>
@@ -50,5 +52,5 @@
             This is content, without any paragraph or header tags,
             within an ion-card-content element.
         </ion-card-content>
-    </ion-card>
+    </ion-card> -->
 </ion-content>

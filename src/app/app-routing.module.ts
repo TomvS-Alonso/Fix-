@@ -11,6 +11,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { VermasComponent } from './pages/ver-mas/ver-mas.component';
 import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
 import { FavoritoComponent } from './pages/favoritos/favorito.component';
+import { RegistroMaestroComponent } from './pages/registerMaestro/registerM.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'MasterRegister',
+    component: RegistroMaestroComponent
   },
   {
     path: 'categories',
