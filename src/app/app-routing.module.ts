@@ -12,6 +12,8 @@ import { VermasComponent } from './pages/ver-mas/ver-mas.component';
 import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
 import { FavoritoComponent } from './pages/favoritos/favorito.component';
 import { RegistroMaestroComponent } from './pages/registerMaestro/registerM.component';
+import { EditarComponent } from './pages/editarUsuario/editarU.component';
+
 
 const routes: Routes = [
   {
@@ -57,6 +59,14 @@ const routes: Routes = [
   {
     path: "favoritos",
     component: FavoritoComponent
+  },
+  {
+    path: 'editarUsuario',
+    component: EditarComponent
+  },
+  {
+    path: 'trabajos',
+    loadChildren: () => import('src/app/pages/trabajos/trabajos.module').then(m => m.TrabajosModule)
   },
   {
     path: '',

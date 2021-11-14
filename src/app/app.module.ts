@@ -25,6 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsuarioServicioService } from './servicio/usuario-servicio.service';
 import { RegistroMaestroComponent } from './pages/registerMaestro/registerM.component';
 import { MaestroServicioService } from './servicio/maestro-servicio.service';
+import { EditarComponent } from './pages/editarUsuario/editarU.component';
+import { TrabajoServicioService } from './servicio/trabajo-servicio.service';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { MaestroServicioService } from './servicio/maestro-servicio.service';
     VermasComponent,
     PerfilUsuarioComponent,
     FavoritoComponent,
+    EditarComponent,
     ],
   entryComponents: [],
   imports: [
@@ -55,7 +58,8 @@ import { MaestroServicioService } from './servicio/maestro-servicio.service';
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, 
     UsuarioServicioService, 
-    MaestroServicioService],
+    MaestroServicioService,
+    TrabajoServicioService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

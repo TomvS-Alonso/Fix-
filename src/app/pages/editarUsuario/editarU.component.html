@@ -1,0 +1,116 @@
+<nav-bar title="Editar Perfil"></nav-bar>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title>
+                            Modificar datos de usuario
+                        </ion-card-title>
+                        <ion-card-subtitle>
+                            Ingrese datos nuevos:
+                        </ion-card-subtitle>
+                    </ion-card-header>
+
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label position="floating">Correo</ion-label>
+                                <ion-input 
+                                    type="text"
+                                    required
+                                    
+                                ></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label position="floating">Nombre</ion-label>
+                                <ion-input 
+                                    type="text"
+                                    required
+                                    
+                                ></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label position="floating">Apellidos</ion-label>
+                                <ion-input
+                                    required 
+                                    type="text"
+                                    
+                                ></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row> 
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label position="floating">Telefono</ion-label>
+                                <ion-input 
+                                    required
+                                    type="text"
+                                    
+                                ></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label position="floating">Direccion</ion-label>
+                                <ion-input 
+                                    required
+                                    type="text"
+                                    
+                                ></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label position="floating">
+                                    Fecha de nacimiento
+                                </ion-label>
+                                <ion-datetime
+                                required
+                                
+                                    displayFormat="DD/MM/YYYY"
+                                    >
+                                </ion-datetime>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-item>
+                                <ion-label position="floating">Contraseña</ion-label>
+                                <ion-input
+                                    required 
+                                    type="password"
+                                    
+                                ></ion-input>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+                <ion-button expand="block" routerLink="/usuario">Aceptar cambios</ion-button>
+                <ion-button expand="block" routerLink="/usuario">Volver</ion-button>
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

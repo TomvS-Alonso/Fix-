@@ -1,0 +1,4 @@
+.botones-trabajo {
+    display: flex;
+    justify-content: space-between;
+}
