@@ -1,35 +1,16 @@
 {
   "usuarios": [
     {
-      "nombre": "Sebastian",
-      "apellidos": "Espinoza",
-      "contrasena": "seba13",
-      "correo": "seba@gmail.com",
-      "telefono": "123123123",
-      "fechaNacimiento": "2016-12-16",
-      "direccion": "su casa",
+      "nombre": "Tomas",
+      "apellidos": "Avendaño",
+      "contrasena": "tomas123",
+      "correo": "tomas@gmail.com",
+      "telefono": "12312312332",
+      "fechaNacimiento": "2001-10-26",
+      "direccion": "mi casa San Bernardo",
       "id": 1
     }
   ],
-  "maestros": [
-    {
-      "nombre": "Ricardo",
-      "apellidos": "Lopez",
-      "contrasena": "ricarod123",
-      "correo": "ricardo@gmail.com",
-      "telefono": "123456788",
-      "profesion": "Carpintero",
-      "direccion": "Los Santos Wood, San Bernardo",
-      "id": 1
-    }
-  ],
-  "trabajos": [
-    {
-      "titulo": "asdasd",
-      "descripcion": "asdasda",
-      "fechaCreacion": "2021-11-14T22:00:09.913Z",
-      "estado": "EN PROGRESO",
-      "id": 1
-    }
-  ]
+  "maestros": [],
+  "trabajos": []
 }
