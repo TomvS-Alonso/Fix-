@@ -26,7 +26,7 @@ export class RegistroMaestroComponent {
     agregarMaestro() {
         // this.maestro.id = this.maestro.id + 1;
         this.servicioMaestro.agregarMaestros(this.maestro)
-        .subscribe(respuesta => console.log(respuesta))
+        .subscribe(respuesta => respuesta)
     }
 
     ngOnInit() {}

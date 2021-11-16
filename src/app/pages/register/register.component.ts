@@ -25,7 +25,7 @@ export class RegisterComponent {
 
     agregarUsuario() {        
         this.servicioUsuario.agregarUsuarios(this.usuario)
-        .subscribe(respuesta => console.log(respuesta))
+        .subscribe(respuesta => respuesta)
     }
 
     ngOnInit() {}
