@@ -1,9 +1,9 @@
 <ion-item>
-    <ion-button href="login">
-        <ion-icon name="arrow-back"></ion-icon>
-    </ion-button>
     <ion-grid class="a">
         <ion-row>
+            <ion-button href="">
+                <ion-icon name="arrow-back"></ion-icon>
+            </ion-button>
             <ion-col>
                 <ion-label class="titulo-app">
                     Fix +
@@ -12,6 +12,7 @@
         </ion-row>
     </ion-grid>
 </ion-item>
+
 <ion-content [fullscreen]="true">
     <ion-grid>
         <ion-row>
@@ -115,7 +116,7 @@
                             <ion-row>
                                 <ion-col>
                                     <ion-button 
-                                        href="login"
+                                        href="loginMaestro"
                                         expand="block" 
                                         (click)="agregarMaestro()"
                                         color="warning"

@@ -13,6 +13,7 @@ import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component
 import { FavoritoComponent } from './pages/favoritos/favorito.component';
 import { RegistroMaestroComponent } from './pages/registerMaestro/registerM.component';
 import { EditarComponent } from './pages/editarUsuario/editarU.component';
+import { LoginMaestroComponent } from './pages/loginMaestro/loginMaestro.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path: '',
     component: LoginComponent
+  },
+  {
+    path: 'loginMaestro',
+    component: LoginMaestroComponent
   },
   {
     path: 'recuperar',

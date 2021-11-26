@@ -20,3 +20,9 @@ ion-card {
 .a {
     background-color: #1659c4;
 }
+
+.letraMaestro{
+    color: blue;
+    font-weight: bolder;
+    text-decoration: underline;
+}
