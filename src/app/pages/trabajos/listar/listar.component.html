@@ -19,19 +19,18 @@
             <ion-col>
                 <ion-card>
                     <ion-card-header>
-                        
                         <ion-card-subtitle>
                             <ion-button href="/trabajos/agregar">Agregar Trabajo</ion-button>
                         </ion-card-subtitle>
                     </ion-card-header>
                     <ion-list>
                         <ion-item *ngFor="let trabajo of trabajos">
-                            <ion-card>
+                            <ion-card class="notas">
                                 <ion-card-header class="botones-trabajo">
                                     <ion-card-title>
                                         <ion-label>{{ trabajo.titulo }}</ion-label>
                                     </ion-card-title>
-                                    <ion-grid>
+                                    <ion-grid class="botones-accion">
                                         <ion-row>
                                             <ion-button color="secondary">
                                                 <ion-icon name="settings"></ion-icon>
@@ -58,16 +57,10 @@
                 </ion-card>
             </ion-col>
         </ion-row>
-
         <ion-row>
             <ion-col>
                 <ion-button expand="block" routerLink="/perfilT">Volver</ion-button>
             </ion-col>
         </ion-row>
-
     </ion-grid>
-
-
-
-
 </ion-content>

@@ -17,7 +17,7 @@ import { EditarComponent } from './pages/editarUsuario/editarU.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'principal',
     component: HomeComponent
   },
   {
@@ -33,7 +33,7 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'login',
+    path: '',
     component: LoginComponent
   },
   {

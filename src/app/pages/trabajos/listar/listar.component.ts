@@ -44,9 +44,9 @@ export class ListarComponent implements OnInit {
     async alertaEliminacion(id: number) {
         const alert = await this.alertController.create({
             cssClass: 'my-custom-class',
-            header: 'Eliminar nota',
+            header: 'Eliminar trabajo',
             subHeader: '',
-            message: '¿Esta seguro que desea eliminar esta nota ?',
+            message: '¿Esta seguro que desea eliminar este trabajo?',
             buttons: ['Cancelar',
                 {
                     text: 'Eliminar',

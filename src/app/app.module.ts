@@ -20,7 +20,7 @@ import { VermasComponent } from './pages/ver-mas/ver-mas.component';
 import { PerfilUsuarioComponent } from './pages/perfil-usuario/perfilU.component';
 import { SwiperModule } from 'swiper/angular';
 import { FavoritoComponent } from './pages/favoritos/favorito.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioServicioService } from './servicio/usuario-servicio.service';
 import { RegistroMaestroComponent } from './pages/registerMaestro/registerM.component';
@@ -53,7 +53,8 @@ import { TrabajoServicioService } from './servicio/trabajo-servicio.service';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule, 
-    FormsModule, 
+    FormsModule,
+    ReactiveFormsModule, 
     HttpClientModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, 

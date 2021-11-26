@@ -1,4 +1,13 @@
 .botones-trabajo {
     display: flex;
     justify-content: space-between;
+    background-color: #157cb9;
+}
+
+.notas {
+    width: 100%;
+}
+
+.botones-accion {
+    display: contents;
 }
