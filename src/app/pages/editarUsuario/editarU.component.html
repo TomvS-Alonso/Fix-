@@ -20,7 +20,7 @@
                                 <ion-input 
                                     type="text"
                                     required
-                                    
+                                    [ngModel]="correo"
                                 ></ion-input>
                             </ion-item>
                         </ion-col>
@@ -29,10 +29,10 @@
                         <ion-col>
                             <ion-item>
                                 <ion-label position="floating">Nombre</ion-label>
-                                <ion-input 
+                                <ion-input
                                     type="text"
                                     required
-                                    
+                                    [ngModel]="nombre"
                                 ></ion-input>
                             </ion-item>
                         </ion-col>
@@ -44,7 +44,7 @@
                                 <ion-input
                                     required 
                                     type="text"
-                                    
+                                    [ngModel]="apellidos"
                                 ></ion-input>
                             </ion-item>
                         </ion-col>
@@ -56,7 +56,7 @@
                                 <ion-input 
                                     required
                                     type="text"
-                                    
+                                    [ngModel]="telefono"
                                 ></ion-input>
                             </ion-item>
                         </ion-col>
@@ -68,7 +68,7 @@
                                 <ion-input 
                                     required
                                     type="text"
-                                    
+                                    [ngModel]="direccion"
                                 ></ion-input>
                             </ion-item>
                         </ion-col>
@@ -81,7 +81,7 @@
                                 </ion-label>
                                 <ion-datetime
                                 required
-                                
+                                [ngModel]="fechaNacimiento"
                                     displayFormat="DD/MM/YYYY"
                                     >
                                 </ion-datetime>
@@ -95,7 +95,7 @@
                                 <ion-input
                                     required 
                                     type="password"
-                                    
+                                    [ngModel]="contrasena"
                                 ></ion-input>
                             </ion-item>
                         </ion-col>
@@ -107,7 +107,7 @@
 
         <ion-row>
             <ion-col>
-                <ion-button expand="block" routerLink="/usuario">Aceptar cambios</ion-button>
+                <ion-button expand="block" routerLink="/usuario/{{ id }}" (click)="editarUsuario()">Aceptar cambios</ion-button>
                 <ion-button expand="block" routerLink="/usuario">Volver</ion-button>
             </ion-col>
         </ion-row>

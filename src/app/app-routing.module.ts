@@ -25,7 +25,7 @@ const routes: Routes = [
     component: BuscarComponent
   },
   {
-    path: 'usuario',
+    path: 'usuario/:id',
     component: PerfilUsuarioComponent
   },
   {
@@ -61,7 +61,7 @@ const routes: Routes = [
     component: FavoritoComponent
   },
   {
-    path: 'editarUsuario',
+    path: 'editarUsuario/:id',
     component: EditarComponent
   },
   {

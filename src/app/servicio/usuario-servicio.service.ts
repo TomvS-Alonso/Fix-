@@ -39,4 +39,8 @@ export class UsuarioServicioService {
     )
   }
 
+  public editarUsuario(id: number, nuevoUser: IUsuario) {
+    return this.httpClient.patch(this.url + '/' + id, nuevoUser);
+  }
+
 }
