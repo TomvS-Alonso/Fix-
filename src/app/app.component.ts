@@ -9,7 +9,7 @@ import { MenuController } from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     { title: 'Principal', url: '/principal', icon: 'home' },
-    { title: 'Perfil', url: '/usuario', icon: 'person' },
+    { title: 'Perfil', url: '/usuario/{{ id }}', icon: 'person' },
     { title: 'Chat', url: '/chat', icon: 'chatbox' },
     { title: 'Acerca de', url: '/about', icon: 'paper-plane' },
     { title: 'Favoritos', url: '/favoritos', icon: 'heart' },

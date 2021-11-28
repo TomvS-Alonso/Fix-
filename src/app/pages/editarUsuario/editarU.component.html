@@ -13,102 +13,107 @@
                         </ion-card-subtitle>
                     </ion-card-header>
 
-                    <ion-row>
-                        <ion-col>
-                            <ion-item>
-                                <ion-label position="floating">Correo</ion-label>
-                                <ion-input 
-                                    type="text"
-                                    required
-                                    [ngModel]="correo"
-                                ></ion-input>
-                            </ion-item>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row>
-                        <ion-col>
-                            <ion-item>
-                                <ion-label position="floating">Nombre</ion-label>
-                                <ion-input
-                                    type="text"
-                                    required
-                                    [ngModel]="nombre"
-                                ></ion-input>
-                            </ion-item>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row>
-                        <ion-col>
-                            <ion-item>
-                                <ion-label position="floating">Apellidos</ion-label>
-                                <ion-input
-                                    required 
-                                    type="text"
-                                    [ngModel]="apellidos"
-                                ></ion-input>
-                            </ion-item>
-                        </ion-col>
-                    </ion-row> 
-                    <ion-row>
-                        <ion-col>
-                            <ion-item>
-                                <ion-label position="floating">Telefono</ion-label>
-                                <ion-input 
-                                    required
-                                    type="text"
-                                    [ngModel]="telefono"
-                                ></ion-input>
-                            </ion-item>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row>
-                        <ion-col>
-                            <ion-item>
-                                <ion-label position="floating">Direccion</ion-label>
-                                <ion-input 
-                                    required
-                                    type="text"
-                                    [ngModel]="direccion"
-                                ></ion-input>
-                            </ion-item>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row>
-                        <ion-col>
-                            <ion-item>
-                                <ion-label position="floating">
-                                    Fecha de nacimiento
-                                </ion-label>
-                                <ion-datetime
-                                required
-                                [ngModel]="fechaNacimiento"
-                                    displayFormat="DD/MM/YYYY"
+                    <form [formGroup]="formValue" (ngSubmit)="editarUsuario()"> 
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">Correo</ion-label>
+                                    <ion-input 
+                                        type="text"
+                                        formControlName="correo"
+                                        [ngModel]="correo"
+                                    ></ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">Nombre</ion-label>
+                                    <ion-input
+                                        type="text"
+                                        formControlName="nombre"
+                                        [ngModel]="nombre"
+                                    ></ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">Apellidos</ion-label>
+                                    <ion-input 
+                                        type="text"
+                                        formControlName="apellidos"
+                                        [ngModel]="apellidos"
+                                    ></ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row> 
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">Telefono</ion-label>
+                                    <ion-input
+                                        type="text"
+                                        formControlName="telefono"
+                                        [ngModel]="telefono"
+                                    ></ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">Direccion</ion-label>
+                                    <ion-input
+                                        type="text"
+                                        formControlName="direccion"
+                                        [ngModel]="direccion"
+                                    ></ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">
+                                        Fecha de nacimiento
+                                    </ion-label>
+                                    <ion-datetime                                    
+                                        displayFormat="DD/MM/YYYY"
+                                        formControlName="fechaNacimiento"
+                                        [ngModel]="fechaNacimiento"
                                     >
-                                </ion-datetime>
-                            </ion-item>
-                        </ion-col>
-                    </ion-row>
-                    <ion-row>
-                        <ion-col>
-                            <ion-item>
-                                <ion-label position="floating">Contraseña</ion-label>
-                                <ion-input
-                                    required 
-                                    type="password"
-                                    [ngModel]="contrasena"
-                                ></ion-input>
-                            </ion-item>
-                        </ion-col>
-                    </ion-row>
+                                    </ion-datetime>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-item>
+                                    <ion-label position="floating">Contraseña</ion-label>
+                                    <ion-input 
+                                        type="password"
+                                        formControlName="contrasena"
+                                        [ngModel]="contrasena"                                        
+                                    ></ion-input>
+                                </ion-item>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col>
+                                <ion-button expand="block" routerLink="/usuario/{{ id }}" type="submit">Aceptar cambios</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </form>
 
                 </ion-card>
             </ion-col>
         </ion-row>
-
         <ion-row>
             <ion-col>
-                <ion-button expand="block" routerLink="/usuario/{{ id }}" (click)="editarUsuario()">Aceptar cambios</ion-button>
-                <ion-button expand="block" routerLink="/usuario">Volver</ion-button>
+                <ion-button expand="block" routerLink="/usuario/{{ id }}">Volver</ion-button>
             </ion-col>
         </ion-row>
 

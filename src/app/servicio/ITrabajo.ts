@@ -5,6 +5,6 @@ export interface ITrabajo {
     comentario?: string;
     calificacion?: string;
     estado: String;
-    fechaCreacion: Date;
+    fechaCreacion?: Date;
 }
 

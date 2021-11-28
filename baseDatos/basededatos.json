@@ -1,24 +1,5 @@
 {
-  "usuarios": [
-    {
-      "nombre": "Tomas",
-      "apellidos": "Avendaño",
-      "contrasena": "tomas123",
-      "correo": "tomas@gmail.com",
-      "telefono": "123123321",
-      "fechaNacimiento": "2021-11-26",
-      "direccion": "Mi casa en san bk",
-      "id": 1
-    }
-  ],
+  "usuarios": [],
   "maestros": [],
-  "trabajos": [
-    {
-      "titulo": "trabajo 1",
-      "descripcion": "trabajo 1",
-      "fechaCreacion": "2021-11-26T22:05:11.825Z",
-      "estado": "EN PROGRESO",
-      "id": 1
-    }
-  ]
+  "trabajos": []
 }

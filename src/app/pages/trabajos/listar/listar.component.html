@@ -32,7 +32,7 @@
                                     </ion-card-title>
                                     <ion-grid class="botones-accion">
                                         <ion-row>
-                                            <ion-button color="secondary">
+                                            <ion-button color="secondary" routerLink="modificar/{{ trabajo.id }}">
                                                 <ion-icon name="settings"></ion-icon>
                                             </ion-button>
                                             <ion-button color="danger" (click)="alertaEliminacion(trabajo.id)">

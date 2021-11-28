@@ -41,4 +41,10 @@ export class TrabajoServicioService {
             })
         )
     }
+
+    public editarTrabajo(id:number, nuevoTrabajo: ITrabajo) {
+        return this.httpclient.put<any>(this.url + '/' + id, nuevoTrabajo).pipe(map((rest:any)=>{
+            return rest;
+        }));
+    }
 }

@@ -14,7 +14,7 @@ const routes: Routes = [
       component: ListarComponent,
     },
     {
-      path: 'modificar',
+      path: 'modificar/:id',
       component: ModificarComponent
     },  
   ];
