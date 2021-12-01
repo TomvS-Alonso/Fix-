@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class UsuarioServicioService {
-  private url: string = 'http://localhost:3000/usuarios';
+  private url: string = 'http://54.174.99.157:3000/usuarios';
   private httpClient: HttpClient;
 
   constructor(client: HttpClient) {
@@ -44,6 +44,5 @@ export class UsuarioServicioService {
       return rest;
     }));
   }
-
 
 }

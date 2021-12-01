@@ -1,6 +1,9 @@
 <ion-item>
     <ion-grid class="a">
         <ion-row>
+            <ion-button href="">
+                <ion-icon name="arrow-back"></ion-icon>
+            </ion-button>
             <ion-col>
                 <ion-label class="titulo-app">
                     Fix +
@@ -9,6 +12,7 @@
         </ion-row>
     </ion-grid>
 </ion-item>
+
 <ion-content [fullscreen]="true">
     <ion-grid>
         <ion-row class="ion-align-items-center">
@@ -16,11 +20,10 @@
                 <ion-card>
                     <ion-card-header>
                         <ion-card-title class="ion-text-center">
-                            Bienvenido
+                            Bienvenido Maestro
                         </ion-card-title>
                     </ion-card-header>
                     <ion-card-content>
-                        
                         <form [formGroup]="loginForm" (ngSubmit)="ingreso()">
                             <ion-row>
                                 <ion-col>
@@ -45,36 +48,11 @@
                                 </ion-col>
                             </ion-row>
                         </form>
-                        
                         <ion-grid>
-                            <ion-card-title class="ion-text-center">
-                                Iniciar sesion con
-                            </ion-card-title>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-button class="boton-facebook" expand="block" color="tertiary" href="">
-                                        <ion-icon name="logo-facebook"></ion-icon>
-                                        Facebook
-                                    </ion-button>
-                                </ion-col>
-                                <ion-col>
-                                    <ion-button class="boton-google" expand="block" color="light" href=""> 
-                                        <ion-icon name="logo-google"></ion-icon>
-                                        Google
-                                    </ion-button>
-                                </ion-col>
-                            </ion-row>
                             <ion-row>
                                 <ion-col size="10" offset="1" class="ion-text-center">
-                                    <ion-router-link href="register">
-                                        ¿No tienes cuenta?
-                                    </ion-router-link>
-                                </ion-col>
-                            </ion-row>
-                            <ion-row>
-                                <ion-col size="10" offset="1" class="ion-text-center">
-                                    <ion-router-link class="letraMaestro" href="loginMaestro">
-                                        ¿Eres un maestro? Haz click aquí.
+                                    <ion-router-link href="MasterRegister">
+                                        ¿No tienes cuenta de maestro?
                                     </ion-router-link>
                                 </ion-col>
                             </ion-row>

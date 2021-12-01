@@ -4,6 +4,7 @@ import { Observable } from "rxjs";
 import { ITrabajo } from "src/app/servicio/ITrabajo";
 import { AlertController } from '@ionic/angular';
 import { TrabajoServicioService } from "src/app/servicio/trabajo-servicio.service";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'listar',
@@ -12,7 +13,7 @@ import { TrabajoServicioService } from "src/app/servicio/trabajo-servicio.servic
 })
 
 export class ListarComponent implements OnInit {
-    private url: string = 'http://localhost:3000/trabajos';
+    private url: string = 'http://54.174.99.157:3000/trabajos';
 
     // titulo: string;
     // descripcion: string;
@@ -20,7 +21,7 @@ export class ListarComponent implements OnInit {
     
     trabajos: Array<ITrabajo>
 
-    constructor(private cliente: HttpClient, private servicio: TrabajoServicioService, public alertController: AlertController) { }
+    constructor(private cliente: HttpClient, private servicio: TrabajoServicioService, public alertController: AlertController, private router: Router) { }
 
     ngOnInit() {
         this.cliente.get<any>(this.url).subscribe((response) => {
@@ -52,7 +53,7 @@ export class ListarComponent implements OnInit {
                     text: 'Eliminar',
                     handler: () => {
                         this.servicio.eliminarTrabajo(id).subscribe(respuesta => respuesta);
-                        window.location.reload();
+                        this.router.navigate(['trabajos']);
                     }
                     
                 }]

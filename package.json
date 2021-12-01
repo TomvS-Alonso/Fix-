@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "iniciar": "json-server --watch ./baseDatos/basededatos.json --host 54.174.99.157"
   },
   "private": true,
   "dependencies": {

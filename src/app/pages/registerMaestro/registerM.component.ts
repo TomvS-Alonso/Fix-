@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 import { IMaestro } from "src/app/servicio/IMaestro";
 import { MaestroServicioService } from "src/app/servicio/maestro-servicio.service";
 
@@ -19,7 +20,7 @@ export class RegistroMaestroComponent {
         direccion: ""
     }
     private servicioMaestro: MaestroServicioService;
-    constructor(servicio: MaestroServicioService) {
+    constructor(servicio: MaestroServicioService, private router: Router) {
         this.servicioMaestro = servicio;
     }
 
@@ -27,6 +28,8 @@ export class RegistroMaestroComponent {
         // this.maestro.id = this.maestro.id + 1;
         this.servicioMaestro.agregarMaestros(this.maestro)
         .subscribe(respuesta => respuesta)
+        this.router.navigate(['loginMaestro'])
+
     }
 
     ngOnInit() {}

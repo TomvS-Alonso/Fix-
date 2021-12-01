@@ -12,7 +12,7 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 })
 
 export class EditarComponent implements OnInit {
-    private url: string = 'http://localhost:3000/usuarios';
+    private url: string = 'http://54.174.99.157:3000/usuarios';
 
 
     formValue !: FormGroup;

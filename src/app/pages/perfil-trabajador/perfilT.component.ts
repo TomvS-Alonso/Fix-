@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { Observable } from "rxjs";
 import { IMaestro } from "src/app/servicio/IMaestro";
 import { MaestroServicioService } from "src/app/servicio/maestro-servicio.service";
@@ -11,7 +12,7 @@ import { MaestroServicioService } from "src/app/servicio/maestro-servicio.servic
 })
 
 export class PerfilTComponent implements OnInit{
-    private url: string = 'http://localhost:3000/maestros';
+    private url: string = 'http://54.174.99.157:3000/maestros';
     
     nombre: string;
     apellidos: string;
@@ -19,7 +20,7 @@ export class PerfilTComponent implements OnInit{
     id: number = 1; // en este caso solo llama a la id 1 
     // maestros: Observable<Array<IMaestro>>;    
 
-    constructor(private servicio: MaestroServicioService, private cliente: HttpClient) {}
+    constructor(private servicio: MaestroServicioService, private cliente: HttpClient, private router: Router) {}
 
     ngOnInit() {
         // this.maestros = this.servicio.obtenerMaestros();
@@ -43,6 +44,7 @@ export class PerfilTComponent implements OnInit{
     }
 
     eliminarUsuario() {
-        this.servicio.eliminarMaestro(this.id).subscribe(respuesta => console.log(respuesta))
+        this.servicio.eliminarMaestro(this.id).subscribe(respuesta => respuesta);
+        this.router.navigate(['loginMaestro']);
     }
 }

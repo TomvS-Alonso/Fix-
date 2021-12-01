@@ -11,7 +11,7 @@ import { MaestroServicioService } from "src/app/servicio/maestro-servicio.servic
 })
 
 export class CategoriesComponent implements OnInit{
-    private url: string = 'http://localhost:3000/maestros';
+    private url: string = 'http://54.174.99.157:3000/maestros';
     private httpClient: HttpClient;
 
     // nombre: string;

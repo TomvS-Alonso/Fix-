@@ -9,7 +9,7 @@ import { ITrabajo } from './ITrabajo';
     providedIn: 'root'
 })
 export class TrabajoServicioService {
-    private url: string = 'http://localhost:3000/trabajos';
+    private url: string = 'http://54.174.99.157:3000/trabajos';
     private httpclient: HttpClient;
     private trabajos: Array<ITrabajo>; 
 

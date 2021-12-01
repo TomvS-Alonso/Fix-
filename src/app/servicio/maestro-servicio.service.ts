@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class MaestroServicioService {
-  private url: string = 'http://localhost:3000/maestros';
+  private url: string = 'http://54.174.99.157:3000/maestros';
   private httpClient: HttpClient;
 
   constructor(client: HttpClient) {

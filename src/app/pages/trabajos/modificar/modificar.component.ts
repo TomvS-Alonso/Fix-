@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 
 export class ModificarComponent implements OnInit{
-    private url: string = 'http://localhost:3000/trabajos';
+    private url: string = 'http://54.174.99.157:3000/trabajos';
 
     myGroup !: FormGroup;
     nuevoTrabajo: ITrabajo = {

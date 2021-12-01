@@ -27,6 +27,7 @@ import { RegistroMaestroComponent } from './pages/registerMaestro/registerM.comp
 import { MaestroServicioService } from './servicio/maestro-servicio.service';
 import { EditarComponent } from './pages/editarUsuario/editarU.component';
 import { TrabajoServicioService } from './servicio/trabajo-servicio.service';
+import { LoginMaestroComponent } from './pages/loginMaestro/loginMaestro.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { TrabajoServicioService } from './servicio/trabajo-servicio.service';
     PerfilUsuarioComponent,
     FavoritoComponent,
     EditarComponent,
-    ],
+    LoginMaestroComponent,
+  ],
   entryComponents: [],
   imports: [
     SwiperModule,

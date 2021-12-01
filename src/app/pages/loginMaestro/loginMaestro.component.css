@@ -1,0 +1,22 @@
+.completa {
+    height: 100%;
+}
+ion-card {
+    align-items: center;
+}
+.titulo-app {
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+.boton-facebook {
+    font-size: 10px;
+    
+}
+.boton-google {
+    font-size: 10px;
+    
+}
+.a {
+    background-color: #1659c4;
+}

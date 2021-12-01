@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 import { IUsuario } from "src/app/servicio/IUsuario";
 import { UsuarioServicioService } from "src/app/servicio/usuario-servicio.service";
 
@@ -19,13 +20,14 @@ export class RegisterComponent {
         direccion: ""
     }
     private servicioUsuario: UsuarioServicioService;
-    constructor(servicio: UsuarioServicioService) {
+    constructor(servicio: UsuarioServicioService, private router: Router) {
         this.servicioUsuario = servicio;
     }
 
     agregarUsuario() {        
         this.servicioUsuario.agregarUsuarios(this.usuario)
-        .subscribe(respuesta => respuesta)
+        .subscribe(respuesta => respuesta);
+        this.router.navigate(['']);
     }
 
     ngOnInit() {}
