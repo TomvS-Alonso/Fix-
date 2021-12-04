@@ -10,8 +10,7 @@
                     </ion-label>
                 </ion-list-header>
                 <ion-avatar class="ion-margin-start">
-                    <img
-                        src="https://st1.uvnimg.com/dims4/default/e4a30ce/2147483647/resize/420x620%3E/quality/75/?url=http%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2F2f%2Fab%2F25ff5ab841bb94e505bae9eb217a%2Fa.jpeg">
+                    <ion-icon class="fotoPerfil" name="person"></ion-icon>
                 </ion-avatar>
             </ion-col>
             <ion-col>
@@ -31,21 +30,29 @@
                     <ion-row>
                         <ion-col class="puntuacionUbica">
                             <ion-icon name="location-outline"></ion-icon>
-                            {{ direccion }}
+                            <ion-label>{{ direccion }}</ion-label>
                         </ion-col>
                     </ion-row>
                     <ion-row>
-
+                        <ion-card class="cartaa">
+                            <ion-card-header>
+                                <ion-card-title>Trabajos calificados
+                                </ion-card-title>
+                            </ion-card-header>
+                            <ion-card-content class="contenidoCard">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-label>30</ion-label>
+                            </ion-card-content>
+                        </ion-card>
                     </ion-row>
                 </ion-grid>
             </ion-col>
         </ion-row>
         <ion-row>  
-            <ion-card>
+            <ion-card class="cartaComentarios">
                 <ion-card-header>
                   <ion-card-title>Comentarios</ion-card-title>
                 </ion-card-header>
-              
                 <ion-card-content>
                     <ion-card>
                         <ion-item>

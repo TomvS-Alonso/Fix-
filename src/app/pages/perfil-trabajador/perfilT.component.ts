@@ -37,8 +37,6 @@ export class PerfilTComponent implements OnInit{
                 this.nombre = maestro.nombre;
                 this.apellidos = maestro.apellidos;
                 this.direccion = maestro.direccion;
-            } else {
-                console.log("paso algo papito");
             }
         });
     }

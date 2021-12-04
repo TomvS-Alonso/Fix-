@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Component,OnInit } from "@angular/core";
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from "@angular/router";
+import { AlertController } from "@ionic/angular";
 
 @Component({
     selector: 'loginMaestro',
@@ -11,13 +12,23 @@ import { Router } from "@angular/router";
 export class LoginMaestroComponent{
 
     public loginForm!: FormGroup
-    constructor(private formbuilder: FormBuilder, private cliente: HttpClient, private router: Router) { }
+    constructor(private formbuilder: FormBuilder, private cliente: HttpClient, private router: Router, public alertController: AlertController) { }
 
     ngOnInit(): void {
         this.loginForm = this.formbuilder.group({
             correo:[''],
             contrasena:['']
         })
+    }
+    async alertaLogin() {
+        const alerta = await this.alertController.create({
+          cssClass: 'alerta',
+          header: 'Error',
+          subHeader: '',
+          message: 'Correo y/o contraseña ingresados son incorrectos.',
+          buttons: ['Volver a intentar']
+        });
+        await alerta.present();
     }
 
     ingreso(){
@@ -29,6 +40,9 @@ export class LoginMaestroComponent{
            if(usuario){
                this.loginForm.reset();
                this.router.navigate(['perfilT'])
+           }
+           else {
+               this.alertaLogin();
            }
            
         })

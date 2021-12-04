@@ -11,3 +11,9 @@
 .botones-accion {
     display: contents;
 }
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

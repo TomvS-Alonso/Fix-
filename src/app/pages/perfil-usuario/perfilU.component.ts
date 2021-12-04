@@ -32,7 +32,9 @@ export class PerfilUsuarioComponent implements OnInit{
         });
     }
     eliminarUsuario() {
-        this.servicio.eliminarUsuario(this.id).subscribe(respuesta => respuesta)
-        this.router.navigate(['principal'])
+        this.servicio.eliminarUsuario(this.id).subscribe((respuesta) => {
+            this.router.navigate(['principal']);
+        });
+        
     }
 }

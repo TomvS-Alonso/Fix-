@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
 import { UsuarioServicioService } from "src/app/servicio/usuario-servicio.service";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IUsuario } from 'src/app/servicio/IUsuario';
 import { FormBuilder, FormGroup } from "@angular/forms";
 
@@ -36,7 +36,7 @@ export class EditarComponent implements OnInit {
     fechaNacimiento: Date;
     id: number;
     
-    constructor(private cliente: HttpClient, private servicio: UsuarioServicioService, private ruta: ActivatedRoute, private formBuilder: FormBuilder) { }
+    constructor(private cliente: HttpClient, private servicio: UsuarioServicioService, private ruta: ActivatedRoute, private formBuilder: FormBuilder, private router: Router) { }
 
     ngOnInit(): void{
         this.ruta.paramMap.subscribe((params) => {
@@ -78,7 +78,10 @@ export class EditarComponent implements OnInit {
         this.nuevoUsuario.fechaNacimiento = this.formValue.value.fechaNacimiento;
         this.nuevoUsuario.contrasena = this.formValue.value.contrasena;
         
-        this.servicio.editarUsuario(this.id, this.nuevoUsuario).subscribe(rest => rest); 
+        this.servicio.editarUsuario(this.id, this.nuevoUsuario).subscribe((rest) => {
+            window.location.reload();
+        });
+        this.router.navigate(['/usuario/1']); 
         
     }
 }
