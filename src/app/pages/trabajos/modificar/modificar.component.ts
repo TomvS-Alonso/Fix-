@@ -64,7 +64,9 @@ export class ModificarComponent implements OnInit{
         this.nuevoTrabajo.descripcion = this.myGroup.value.descripcion;
         this.nuevoTrabajo.estado = this.myGroup.value.estado;
 
-        this.servicio.editarTrabajo(this.id, this.nuevoTrabajo).subscribe(rest => rest);
+        this.servicio.editarTrabajo(this.id, this.nuevoTrabajo).subscribe((rest) => {
+            window.location.reload();
+        });
         this.router.navigate(['/trabajos']);
     }    
 }

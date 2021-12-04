@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { ChangeDetectorRef, Component } from "@angular/core";
 import { ITrabajo } from "src/app/servicio/ITrabajo";
 import { TrabajoServicioService } from "src/app/servicio/trabajo-servicio.service";
 import { Router } from '@angular/router';
@@ -23,7 +23,10 @@ export class AgregarComponent{
 
     agregarTrabajo() {
         this.serviciotrabajo.agregarTrabajos(this.trabajo)
-        .subscribe(respuesta => respuesta)
-        this.router.navigate(['/trabajos']);
+        .subscribe((respuesta) => {
+            this.router.navigate(['/trabajos']);
+        })
+        // this.router.navigate(['/trabajos']);
+        
     }
 }

@@ -52,13 +52,15 @@ export class ListarComponent implements OnInit {
                 {
                     text: 'Eliminar',
                     handler: () => {
-                        this.servicio.eliminarTrabajo(id).subscribe(respuesta => respuesta);
-                        this.router.navigate(['trabajos']);
+                        this.servicio.eliminarTrabajo(id).subscribe((respuesta) => {
+                            window.location.reload();
+                        });
+                        // this.router.navigate(['trabajos']);
+                        
                     }
-                    
                 }]
         });
-
         await alert.present();
     }
+
 }
